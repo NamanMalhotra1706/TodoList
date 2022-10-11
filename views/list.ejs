@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDO List</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+<body>
+    <div class="box" id="heading">
+        <h1> <%= ListDay %> </h1
+    </div>
+    <div class="box">
+     <!-- To change the word with the current day stored in variable -->
+         <!--Using For Loop so that each new item will get new li and add in new line-->
+        <% for(var i=0 ;i<newListItem.length;i++){ %>
+            <div class="item">
+            <input type="checkbox">
+            <p><%= newListItem[i] %></p></div>
+       <% } %>
+       <form action="/" method="post">
+        <input type="text" name="NewItems" placeholder="New Items">
+        <button type="submit" name="SubmitButton">+</button>
+    </form>
+    </div>
+
+    
+    
+
+
+
+    <!-- <% if(ListDay===" Sunday" || ListDay==="Saturday") { %>
+        <h1 style="color: Red;">Hurray! Its <%= ListDay %> . Today is Weekend</h1>
+    <%  } else { %>
+        <h1 style="color: rgb(224, 6, 177);"Awwwwww! Its <%= ListDay %> . Today is Weekday</h1>
+   <% } %> -->
+   <!-- <h1> Today is <%= ListDay %> </h1> -->
+</body>
+</html>
